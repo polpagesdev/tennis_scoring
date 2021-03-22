@@ -21,9 +21,9 @@
 + (2, 3, "Thirty-Forty") --commit
 + (2, 4, "Win for player2") --commit
 
-- (3, 0, "Forty-Love")
-- (3, 1, "Forty-Fifteen")
-- (3, 2, "Forty-Thirty")
++ (3, 0, "Forty-Love")
++ (3, 1, "Forty-Fifteen")
++ (3, 2, "Forty-Thirty")
 
 - (3, 4, "Advantage player2")
 - (4, 5, "Advantage player2")

@@ -26,9 +26,9 @@ class Game:
         if self.player1.score == 0:
             if self.player2.score == 1:
                 return "Love-Fifteen"
-            if self.player2.score == 2:
+            elif self.player2.score == 2:
                 return "Love-Thirty"
-            if self.player2.score == 3:
+            elif self.player2.score == 3:
                 return "Love-Forty"
             else:
                 return "Win for player 2"
@@ -36,9 +36,9 @@ class Game:
         if self.player1.score == 1:
             if self.player2.score == 0:
                 return "Fifteen-Love"
-            if self.player2.score == 2:
+            elif self.player2.score == 2:
                 return "Fifteen-Thirty"
-            if self.player2.score == 3:
+            elif self.player2.score == 3:
                 return "Fifteen-Forty"
             else:
                 return "Win for player 2"
@@ -46,9 +46,17 @@ class Game:
         if self.player1.score == 2:
             if self.player2.score == 0:
                 return "Thirty-Love"
-            if self.player2.score == 1:
+            elif self.player2.score == 1:
                 return "Thirty-Fifteen"
-            if self.player2.score == 3:
+            elif self.player2.score == 3:
                 return "Thirty-Forty"
             else:
                 return "Win for player 2"
+
+        if self.player1.score == 3:
+            if self.player2.score == 0:
+                return "Forty-Love"
+            elif self.player2.score == 1:
+                return "Forty-Fifteen"
+            elif self.player2.score == 2:
+                return "Forty-Thirty"

@@ -30,8 +30,6 @@ class Game:
                 return "Love-Thirty"
             elif self.player2.score == 3:
                 return "Love-Forty"
-            else:
-                return "Win for player 2"
 
         if self.player1.score == 1:
             if self.player2.score == 0:
@@ -40,8 +38,6 @@ class Game:
                 return "Fifteen-Thirty"
             elif self.player2.score == 3:
                 return "Fifteen-Forty"
-            else:
-                return "Win for player 2"
 
         if self.player1.score == 2:
             if self.player2.score == 0:
@@ -50,8 +46,6 @@ class Game:
                 return "Thirty-Fifteen"
             elif self.player2.score == 3:
                 return "Thirty-Forty"
-            else:
-                return "Win for player 2"
 
         if self.player1.score == 3:
             if self.player2.score == 0:
@@ -60,3 +54,15 @@ class Game:
                 return "Forty-Fifteen"
             elif self.player2.score == 2:
                 return "Forty-Thirty"
+
+        if self.player1.score >= 4 and self.player1.score - self.player2.score == 1:
+            return "Advantage player1"
+
+        if self.player2.score >= 4 and self.player2.score - self.player1.score == 1:
+            return "Advantage player2"
+
+        if self.player1.score >= 4 and self.player1.score - self.player2.score >= 2:
+            return "Win for player1"
+
+        if self.player2.score >= 4 and self.player2.score - self.player1.score >= 2:
+            return "Win for player2"
